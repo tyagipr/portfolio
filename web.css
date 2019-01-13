@@ -1,0 +1,302 @@
+.background{
+    height:120%;
+}
+
+/* About */
+
+#About {
+    padding-top:30px;
+    height:650px;
+    color:black; 
+    background-color: white;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.ghost-button2 {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    border: 4px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    position: absolute; 
+    left: 1050;
+    top:1370px;
+    background-color: #94eebb; 
+    cursor: -webkit-grab;
+    cursor: grab;
+    font-size: 18px;
+    border-radius: 10px;
+    
+  }
+  
+.about{
+    position: absolute;
+    top: 1050;
+    left: 100px;
+    width: 600;
+    height: 380;
+}
+
+.project1{
+    position: absolute;
+    top: 1650;
+    left: 200px;
+    width: 300;
+    height: 180;
+}
+
+.project2{
+    position: absolute;
+    top: 1650;
+    left: 600px;
+    width: 300;
+    height: 180;
+}
+
+.project3{
+    position: absolute;
+    top: 1650;
+    left: 1000px;
+    width: 300;
+    height: 180;
+}
+
+.button-project{
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    position: absolute; 
+    left: 650;
+    top:1930px;
+    background-color: black; 
+    cursor: -webkit-grab;
+    cursor: grab;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.Frontend{
+    position: absolute;
+    left: 900px;
+    top: 1030px;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+.backend{
+    position: absolute;
+    left: 1065px;
+    top: 1130px;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+.languages{
+    position: absolute;
+    left: 1020px;
+    top: 1230px;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+#Qualification {
+    padding-top:30px;
+    height:600px;
+    text-align: center;
+    text-decoration-line: underline;
+    color:black; 
+    background-color:#94eebb ;
+    
+}
+
+.img2{
+    position: absolute;
+    left:500px;
+    top:1680;
+    height:380;
+    width:600;
+}
+
+#Contact {
+    padding-top:50px;
+    height:600px;
+    color:black; 
+    background-color: white;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+
+#Quote{
+    padding-top:30px;
+    height:130px;
+    text-align: center;
+    text-decoration-line: underline;
+    color:black; 
+    background-color:#757976 ; 
+    text-decoration: none;
+}
+
+.ghost-button3{
+    display: inline-block;
+    width: 150px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    /* position: absolute;
+    left: 50;
+    top:200px; */
+    background: transparent;
+    cursor: -webkit-grab;
+    cursor: grab;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+i{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size:8px;
+    display: inline-block;
+    
+    font-family: helvetica;
+   
+}
+
+.container{
+    display: inline-block;
+}
+/* navigation bar */
+
+
+
+a:active{
+    color:#94eebb;
+} 
+.topnav{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    word-spacing: 20px;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: helvetica;
+  }
+  
+  .topnav a:hover {
+    
+    color: #94eebb;
+    text-decoration: none;
+  }
+  
+  .topnav a.active {
+    
+    color: white;
+    text-decoration: none;
+  }
+
+
+.intro{
+    position: absolute;
+    top: 250;
+    left: 300;
+    color: white;
+    font-size: 40px;
+}
+
+
+
+.name{
+    position: absolute;
+    top: 70;
+    left:60;
+    font-size: 20px;
+}
+
+.name1{
+    position: absolute;
+    top: 90;
+    left:50;
+    font-size: 40px;
+    color:#94eebb;
+}
+
+.name2{
+    position: absolute;
+    top: 150;
+    left:60;
+    font-size: 20px;
+}
+
+.ghost-button {
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    position: absolute;
+    left: 50;
+    top:200px;
+    background: transparent;
+    cursor: -webkit-grab;
+    cursor: grab;
+    font-size: 15px;
+  }
+  
+  .ghost-button1 {
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    position: absolute;
+    top:200px;
+    left: 210;
+    background: transparent;
+    cursor: -webkit-grab;
+    cursor: grab;
+    font-size: 15px;
+  }
+
+  .img{
+      height: 300px;
+      width: 400px;
+      padding-left: 100px;
+      
+  }
+  
+  .card{
+      color: black;
+        font-size: 20px;
+        padding: 40px 40px;
+        font-family: Arial, Helvetica, sans-serif
+            
+  }
+
+  

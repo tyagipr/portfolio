@@ -1,0 +1,129 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="web.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <script href="action.js"></script>
+        </head>
+        <body >
+                <img src="background.jpg" alt="background" class="background"/>
+                <i class="fa fa-paper-plane" aria-hidden="true" style="font-size:36px;color:#94eebb;"></i><p style="position:absolute; left:150px; top:50px; font-family: Helvetica; color:#94eebb;font-size: 28px;">fly high</p>
+                
+                <div class="topnav">
+                        <a class="active" href="#home">Home</a>
+                        <a href="#About">About</a>
+                        <a href="#Qualification">Projects</a>
+                        <a href="#Contact">Contact</a>
+                </div>
+                
+                <div id="About" class="container-fluid">
+                        <h1>About Me</h1>
+                        <br/>
+                        <img src="about.jpg" alt="about" class="about" />
+                        <div class="Frontend">
+                                <h3 style="font-size:30px"; "font-family:Helvetica";>Frontend</h3>
+                                <p style="font-size: 20px";>HTML, CSS, JavaScript, Bootstrap, ReactJS</p>
+                        </div>
+                        <div class="backend">
+                                <h3 style="font-size:30px"; "font-family:Helvetica";>Backend</h3>
+                                <p style="font-size: 20px";>MySQL, NodeJS </p>
+                        </div>
+                        <div class="Languages">
+                                <h3 style="font-size:30px"; "font-family:Helvetica";>Languages</h3>
+                                <p style="font-size: 20px";>C, C++, Python, Core Java</p>
+                        </div>                
+                        <input type="button" onclick="location.href='Resume.pdf';" value="Download CV" class="ghost-button2" download/> 
+                        
+                </div>
+                <div id="Qualification" class="container-fluid">
+                        <h1>Projects</h1>
+                        
+                        <img src="project1.jpg" alt="about" class="project1" />
+                        <img src="project2.jpg" alt="about" class="project2" />
+                        <img src="project3.jpg" alt="about" class="project3" />
+                        <input type="button" onclick="location.href='Index.html';" value="Project Link" class="button-project"/>
+                        
+                </div>
+                <div id="Contact" class="container-fluid">
+                        <h1>Contact</h1>
+                        <p style="font-size:25px ; font-family:Helvetica; position: absolute; top: 2250; left: 240; text-decoration: none;">Address Info</p>
+                        <i class="fa fa-map-marker" aria-hidden="true" style = "position: absolute; top: 2300; left: 190; color:#94eebb;font-size:24px;"></i>
+                        <p style="position: absolute; top: 2300; left: 220; text-decoration: none; font-size:18px ; font-family:Helvetica;">Near Malkhan Singh Chowk,<br>Deoband ,UP - 254774
+                        </p><br>
+                        <i class="fa fa-phone" aria-hidden="true"  style = "position: absolute; top: 2360; left: 190; color:#94eebb;font-size:24px;"></i>
+                        <p style="position: absolute; top: 2360; left: 230; text-decoration: none; font-size:18px ; font-family:Helvetica;">+91 9557866085
+                        </p><br>
+                        <i class="fa fa-envelope" aria-hidden="true" style = "position: absolute; top: 2420; left: 190; color:#94eebb;font-size:18px;"></i>
+                        <p style="position: absolute; top: 2415; left: 230; text-decoration: none; font-size:18px ; font-family:Helvetica;">tyagipragya99@gmail.com
+                        </p>
+
+                        <img src="map.png" alt="map" name="map" width="25%" height="45%"></img>
+
+                        <div>
+                                <h3 style="font-size:25px ; font-family:Helvetica; position: absolute; top: 2230; left: 1000; text-decoration: none;">Get In Touch</h3>
+                                <form name='registration' onSubmit="return formValidation();">
+                                        <i class="fa fa-user" aria-hidden="true" style = "position: absolute; top: 2300; left: 970; color:#94eebb;font-size:24px;" ></i><p style=" font-size:18px ; font-family:Helvetica; position: absolute; top: 2300; left: 1000; text-decoration: none;">Name</p><input type="text" name="username" style="position: absolute; top: 2300; left: 1090; border-radius: 5px; border:1px solid black; height:5%; width: 20%;">
+                                        
+                                        <i class="fa fa-envelope" aria-hidden="true" style = "position: absolute; top: 2365; left: 970; color:#94eebb;font-size:18px;"></i><p style=" font-size:18px ; font-family:Helvetica; position: absolute; top: 2360; left: 1000; text-decoration: none;">E-Mail</p><input type="text" name="email" style="position: absolute; top: 2360; left: 1090; border-radius: 5px; border:1px solid black; height:5%; width: 20%;">
+
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true" style="position:absolute; top:2425; left:970;color:#94eebb; font-size: 18px; "></i><p style=" font-size:18px ; font-family:Helvetica; position: absolute; top: 2420; left: 1000; text-decoration: none;">Message</p><input type="text" name="message" style="position: absolute; top: 2420; left: 1090; border-radius: 5px; border:1px solid black; height:15%; width: 20%;">
+
+                                        <Button type="Submit" onClick="myFunction()"  style="position:absolute; top:2550; left:1300; padding: 8px 12px;border-radius:10px; border:1px solid black; background-color:#94eebb ">Submit</Button>
+                                </form>
+
+                        </div>
+                </div> 
+                <div id="Quote" class="container-fluid">
+                        <!-- <h2>Hire Me</h2> -->
+                        <input type="button" onclick="location.href='Index.html';" value="Hire Me" class="ghost-button3"/>
+                        <i class="fa fa-linkedin-square" aria-hidden="true" style="color: #0077B5; font-size: 36px; position: absolute; left: 550px; top: 2900px;"></i>
+
+                        <i class="fa fa-facebook-square" aria-hidden="true" style="color: #3C5A99; font-size: 36px; position: absolute; left: 650px; top: 2900px;"></i>
+
+                        <i class="fa fa-google-plus-square" aria-hidden="true" style="color: #db4a39; font-size: 36px; position: absolute; left: 750px; top: 2900px;"></i>
+
+                        <i class="fa fa-twitter-square" aria-hidden="true" style="color: #1DA1F2; font-size: 36px; position: absolute; left: 850px; top: 2900px;"></i>
+
+                        <i class="fa fa-pinterest-p" aria-hidden="true" style="color: #c8232c; font-size: 36px; position: absolute; left: 950px; top: 2900px;"></i>
+                </div>     
+                
+            
+                <div class="intro">
+                
+                        <h2 class="welcome">Welcome to my Website</h2>
+                        <p class="name">I am</p><br><p class="name1"> Pragya Tyagi</p><br/><p class="name2">I am a software             Developer
+                        </p>
+                        <br/>
+                        
+                        <input type="button" onclick="location.href='http://www.github.com/tyagipr';" value="Github" class="ghost-button"/>
+                        
+                        <div class="container">
+  
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="ghost-button1" data-toggle="modal" data-target="#myModal">Read More</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                        <div class="modal-dialog">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                        <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                <!-- <h4 class="modal-title">Modal Header</h4> -->
+                                                                <div>
+                                                                        <img src="Pragya1.jpg" alt="img" class="img"/>
+                                                                        <p class="card" >Myself Pragya Tyagi.
+                                                                        I am a MCA Post-graduate student at Vellore Institute of technology, Chennai.
+                                                                        I am a Confident, hard-working, extrovert, friendly person.
+                                                                        I usually work as a Frontend and backend developer, but I am also intrested in learning new technologies.
+                                                                        </p>
+                                                                </div>        
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </body>
+</html>
