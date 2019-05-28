@@ -1,44 +1,63 @@
-function formValidation(){
-    var uname = document.registration.username;
-    var uemail = document.registration.email;
+$(function() {
+    $('a[href*=#]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+  });
 
+/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
+$(document).ready(function() {
 
-    if(allLetter(uname))
-    {
-    if(ValidateEmail(uemail))
-    {
-    }
-    }
-    return false;
+  //window and animation items
+  var animation_elements = $.find('.animation-element');
+  var web_window = $(window);
 
-    function allLetter(uname)
-    { 
-        var letters = /^[A-Za-z]+$/;
-            if(uname.value.match(letters))
-            {
-                    return true;
-            }
-            else
-            {
-                alert('Username must have alphabet characters only');
-                uname.focus();
-                return false;
-            }
-    }
+  //check to see if any animation containers are currently in view
+  function check_if_in_view() {
+    //get current window information
+    var window_height = web_window.height();
+    var window_top_position = web_window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
 
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
 
-    function ValidateEmail(uemail)
-    {
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(uemail.value.match(mailformat))
-        {
-            return true;
-        }
-        else
-        {
-            alert("You have entered an invalid email address!");
-            uemail.focus();
-            return false;
-        }
-    }
-}    
+      //get the element sinformation
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top_position = $(element).offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+        element.addClass('in-view');
+      } else {
+        element.removeClass('in-view');
+      }
+    });
+
+  }
+
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
+
+});
+
+$('document').ready(function(){
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 300,
+  });
+});
+
+AOS.init();
+
+// var typed = new Typed('#typed', {
+//   stringsElement: '#typed-strings'
+
+// });
+
